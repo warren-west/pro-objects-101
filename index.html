@@ -3,21 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Cars</title>
+    <title>Super Guitars</title>
 
     <script src="iteratingObjects.js" defer></script>
+    <script src="guitars.js" type="module" defer></script>
 </head>
 <body>
-    <h2>My Car:</h2>
+    <section id="section-guitars">
+        <!-- guitars -->
+        
+        <select id="guitars-select">
+            <option id="default-guitar" value="default-guitar">--- Select a guitar ---</option>
+        </select>
 
-    <!-- This is completely static, which is okay sometimes.
-    But sometimes we want everything to be dynamic. -->
-    <!-- <p id="car-brand">Brand:</p>
-    <p id="car-model">Model:</p>
-    <p id="car-color">Color:</p>
-    <p id="car-bhp">BHP:</p>
-    <p id="car-convertible">Convertible:</p>
-    <p id="car-automatic">Automatic:</p> -->
+        <h3 id="guitar-header"></h3>
+        <small id="guitar-id"></small>
+        <img id="guitar-image" width="450">
+        <p id="guitar-body-type"></p>
+
+        <!-- dynamically generate guitar materials -->
+        <ul id="guitar-materials-list"></ul>
+
+    </section>
+
+
+
+
+
+    <hr>
+    <section id="section-cars" style="display: none;">
+        <!-- cars -->
+        <h2>My Car:</h2>
+    
+        <!-- This is completely static, which is okay sometimes.
+        But sometimes we want everything to be dynamic. -->
+        <!-- <p id="car-brand">Brand:</p>
+        <p id="car-model">Model:</p>
+        <p id="car-color">Color:</p>
+        <p id="car-bhp">BHP:</p>
+        <p id="car-convertible">Convertible:</p>
+        <p id="car-automatic">Automatic:</p> -->
+    </section>
 
 </body>
 </html>

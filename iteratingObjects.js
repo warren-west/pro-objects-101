@@ -10,18 +10,21 @@ const myCar = {
 
 
 // DOM Elements
+const sectionCars = document.getElementById("section-cars")
+
+
 function renderCarDetails() {
     
     // for, for...of, for...in
     for (let key in myCar) {
-        console.log(key)
-        console.log(myCar[key])
+        // console.log(key)
+        // console.log(myCar[key])
 
         const newPTag = document.createElement("p")
         newPTag.id = "car-" + key
         newPTag.innerText = `${key}: ${myCar[key]}`
 
-        document.body.appendChild(newPTag)
+        sectionCars.appendChild(newPTag)
     }
     
 }
@@ -36,7 +39,7 @@ function forInLoopWithArrays() {
     let superCars = ["Lamborghini", "Ferrari", "Porsche"]
     
     for (let idx in superCars) {
-        console.log(idx)
-        console.log(superCars[idx])
+        // console.log(idx)
+        // console.log(superCars[idx])
     }
 }
