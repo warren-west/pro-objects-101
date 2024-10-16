@@ -15,3 +15,12 @@ export class Guitar {
     // nothing here is altering the DOM
     // therefore, we should put it in another file
 }
+
+class GuitarMaterials {
+    constructor(neck, fretboard, body) {
+        this.neck = neck
+        this.fretboard = fretboard
+        this.body = body
+    }
+    // other stuff? Printing out the details, etc.
+}
